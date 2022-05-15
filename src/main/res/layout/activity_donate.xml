@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateActivity">
+
+    <ImageView
+        android:id="@+id/image_profile_donate"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_description_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/text_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/full_name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_profile_donate" />
+
+    <EditText
+        android:id="@+id/editText_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:hint="@string/hint_full_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_full_name"
+        app:layout_constraintStart_toEndOf="@+id/text_full_name"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/phone"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_full_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_full_name" />
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:maxLength="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_phone"
+        app:layout_constraintStart_toStartOf="@+id/editText_full_name"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_credit_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/credit_card"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_phone"
+        app:layout_constraintTop_toBottomOf="@+id/text_phone" />
+
+    <EditText
+        android:id="@+id/editText_credit_card"
+        android:layout_width="227dp"
+        android:layout_height="46dp"
+        android:ems="20"
+        android:hint="@string/hint_credit_card"
+        android:inputType="textVisiblePassword"
+        android:maxLength="19"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_credit_card"
+        app:layout_constraintStart_toStartOf="@+id/editText_phone"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_cvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/cvc"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_credit_card"
+        app:layout_constraintTop_toBottomOf="@+id/text_credit_card" />
+
+    <EditText
+        android:id="@+id/editText_cvc"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:ems="3"
+        android:hint="@string/hint_cvc"
+        android:inputType="numberPassword"
+        android:maxLength="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_cvc"
+        app:layout_constraintStart_toStartOf="@+id/editText_credit_card"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/amount"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_cvc"
+        app:layout_constraintTop_toBottomOf="@+id/text_cvc" />
+
+    <EditText
+        android:id="@+id/editText_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_amount"
+        app:layout_constraintStart_toStartOf="@+id/editText_cvc"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_receive_receipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/receive_receipt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text_amount"
+        app:layout_constraintTop_toBottomOf="@+id/text_amount" />
+
+    <Switch
+        android:id="@+id/switch_receive_receipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_receive_receipt"
+        app:layout_constraintStart_toEndOf="@+id/text_receive_receipt"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button_donate_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/btn_donate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_receive_receipt"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

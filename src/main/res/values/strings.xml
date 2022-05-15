@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">CS Feature</string>
+    <string name="name_title">Name:</string>
+    <string name="name">Frances Elizabeth Allen</string>
+    <string name="birth_title">Born:</string>
+    <string name="birth_date">August 4, 1932</string>
+    <string name="birth_location">(Peru, New York)</string>
+    <string name="age_title">Age:</string>
+    <string name="age">89 years old (deceased)</string>
+    <string name="current_location_title">Location:</string>
+    <string name="current_location">Schenectady, New York</string>
+    <string name="nationality_title">Nationality:</string>
+    <string name="nationality">United States</string>
+    <string name="bio_title">Bio:</string>
+    <string name="bio">Allen was an American computer scientist. She did revolutionary work in optimizing
+    compilers and became the first woman to win both the IBM Fellow and the Turing Award. She worked on a programming language
+    named Alpha while working for the National Security Agency. She worked with a fellow researcher to write a series
+    of papers on optimizing compilers. She also led IBM in developing parallel computing and helped develop software
+    for the IBM Blue Gene Project.</string>
+    <string name="btn_biography">Biography</string>
+    <string name="btn_more_info">More Info</string>
+    <string name="btn_donate">Donate</string>
+    <string name="early_life_title">Early Life</string>
+    <string name="early_life_bio">Allen was born in Peru, New York, near Lake Champlain. She was the oldest
+        of her six siblings. Her mother  taught in an elementary school and her father was a farmer. She got early
+        elementary education in a single room school house (one mile away from her residence) and then went to a local
+        high school. She was very influenced by her math teacher as a child and went on for becoming a math teacher herself.
+        She taught math for two years at the same high school she had attended later in her life.</string>
+    <string name="education_title">Education</string>
+    <string name="education_bio">For four years, Allen attended the New York State College for Teachers. There, she
+        earned a bachelor of arts in mathematics and minored in physics and education credits. Allen moved to Columbia
+        for some summer courses after this as she realized that she would need a masters degree to become a full teacher.
+        After Columbia, she went to the University of Michigan at Ann Arbor for her masters in mathematics. There, she also
+        took some computer science courses and learned how to program an IBM 650 from Bernard Galler (co-developer of the MAD
+        programming language and President of the ACM). Later in her life, she received six honorary Doctor of Science degrees from six different universities and a Doctor
+        of Engineering degree from University of Notre Dame.</string>
+    <string name="accomplishments_title">Accomplishments</string>
+    <string name="accomplishments_bio">Allen worked for the IBM Corporation and taught FORTRAN
+        to company engineers. She designed and managed the compiler for the Stretch/Harvest
+        computer. Stretch was one of the first supercomputers, and Harvest was a coprocessor that
+        had been designed for the US National Security Agency to decrypt secret messages. Allen
+        designed a compiler framework to handle FORTRAN, Autocoder, and Alpha (3 language
+        compilers). She joined Project Y which included another set of cutting-edge advances
+        in the design of computer systems. She represented programs within the compiler as graphs instead
+        of a sequence of statements so hidden properties of the code could be discovered. Allen then worked on IBM Future Systems project to revolutionize systems and worked
+        on the Experimental Compiler Systems project to support multiple programming languages.
+        Her last big project was IBM PTRAN, a system to compile FORTRAN programs on parallel
+        computer architectures.</string>
+    <string name="content_description_profile">Profile Picture</string>
+    <string name="content_description_flag">Flag Picture</string>
+    <string name="content_description_early_life">Early Life Picture</string>
+    <string name="content_description_education">Education Picture</string>
+    <string name="content_description_accomplishments">Accomplishments Picture</string>
+    <string name="uri_birth_location">geo:0,0?q=peru+new+york</string>
+    <string name="uri_current_location">geo:0,0?q=schenectady+new+york</string>
+    <string name="uri_wikipedia">https://en.wikipedia.org/wiki/Frances_Allen</string>
+    <string name="full_name">Full Name:</string>
+    <string name="phone">Phone #:</string>
+    <string name="credit_card">Credit Card #:</string>
+    <string name="cvc">CVC:</string>
+    <string name="amount">Amount:</string>
+    <string name="receive_receipt">Receive receipt:</string>
+    <string name="hint_full_name">e.g. John Doe</string>
+    <string name="hint_phone">e.g. 76500000</string>
+    <string name="hint_credit_card">e.g. 1234-5678-1234-5678</string>
+    <string name="hint_cvc">e.g. 123</string>
+    <string name="hint_amount">e.g. 12.45</string>
+    <string name="dialog_title">Credit Card Info Wrong</string>
+    <string name="dialog_message">Credit Card information must be correct and should be in this
+        format: 0000-0000-0000-0000</string>
+    <string name="dialog_error_title">Missing Info</string>
+    <string name="dialog_error_message">Please fill in all the missing fields</string>
+    <string name="dialog_phone_title">Phone Info Wrong</string>
+    <string name="dialog_phone_message">Phone number should be 8 digits long</string>
+    <string name="dialog_cvc_title">CVC Info Wrong</string>
+    <string name="dialog_cvc_message">CVC should be 3 digits long</string>
+
+
+
+
+
+
+
+</resources>

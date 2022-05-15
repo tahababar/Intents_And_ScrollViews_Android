@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/button_biography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_biography"
+        app:layout_constraintEnd_toStartOf="@+id/button_more_info"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_bio" />
+
+    <Button
+        android:id="@+id/button_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_more_info"
+        app:layout_constraintEnd_toStartOf="@+id/button_donate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_biography"
+        app:layout_constraintTop_toTopOf="@+id/button_biography" />
+
+    <Button
+        android:id="@+id/button_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_donate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_more_info"
+        app:layout_constraintTop_toTopOf="@+id/button_more_info" />
+
+    <ImageView
+        android:id="@+id/image_profile"
+        android:layout_width="157dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/content_description_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/image_flag"
+        android:layout_width="155dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_description_flag"
+        app:layout_constraintStart_toStartOf="@+id/image_profile"
+        app:layout_constraintTop_toBottomOf="@+id/image_profile"
+        app:srcCompat="@drawable/flag" />
+
+    <TextView
+        android:id="@+id/text_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/name_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_birth_title"
+        app:layout_constraintStart_toEndOf="@+id/image_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_name_title"
+        app:layout_constraintStart_toEndOf="@+id/text_name_title" />
+
+    <TextView
+        android:id="@+id/text_birth_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/birth_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_age_title"
+        app:layout_constraintStart_toStartOf="@+id/text_name_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_name_title"
+        app:layout_constraintVertical_weight="2" />
+
+    <TextView
+        android:id="@+id/text_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/birth_date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_birth_title"
+        app:layout_constraintStart_toEndOf="@+id/text_birth_title" />
+
+    <TextView
+        android:id="@+id/text_age_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/age_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_current_location_title"
+        app:layout_constraintStart_toStartOf="@+id/text_birth_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_birth_title"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/text_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/age"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_age_title"
+        app:layout_constraintStart_toEndOf="@+id/text_age_title" />
+
+    <TextView
+        android:id="@+id/text_birth_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:text="@string/birth_location"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/image_profile"
+        app:layout_constraintTop_toBottomOf="@+id/text_birth"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_current_location_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/current_location_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_nationality_title"
+        app:layout_constraintStart_toStartOf="@+id/text_age_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_age_title"
+        app:layout_constraintVertical_weight="2" />
+
+    <TextView
+        android:id="@+id/text_current_location"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="5dp"
+        android:clickable="true"
+        android:text="@string/current_location"
+        android:textColor="@color/blue"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_current_location_title"
+        app:layout_constraintStart_toEndOf="@+id/text_current_location_title"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_nationality_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/nationality_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_flag"
+        app:layout_constraintStart_toStartOf="@+id/text_current_location_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_current_location_title"
+        app:layout_constraintVertical_weight="2" />
+
+    <TextView
+        android:id="@+id/text_nationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/nationality"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_nationality_title"
+        app:layout_constraintStart_toEndOf="@+id/text_nationality_title" />
+
+    <TextView
+        android:id="@+id/text_bio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bio_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_flag" />
+
+    <TextView
+        android:id="@+id/text_bio"
+        android:layout_width="288dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bio"
+        app:layout_constraintStart_toEndOf="@+id/text_bio_title"
+        app:layout_constraintTop_toBottomOf="@+id/image_flag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
